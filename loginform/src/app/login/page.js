@@ -15,8 +15,9 @@ export default function Home() {
         .then((res)=>res.data)
         .then((finalRes)=>{
             console.log(finalRes)
-            if(finalRes.length>=1){
+            if(finalRes.findUser._id!==undefined && finalRes.findUser._id!==""){
                 alert("! login successfull !")
+                localStorage.setItem("userData",JSON.stringify(finalRes))
             }
             else{
                 alert("! email or password not matched !")
