@@ -1,0 +1,7 @@
+*{
+  list-style: none;
+}
+.contactForm textarea{
+  height: 100px;
+  resize: none;
+}
